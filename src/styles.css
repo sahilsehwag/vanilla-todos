@@ -1,0 +1,85 @@
+* {
+	font-weight: lighter !important;
+}
+body {
+	font-family: sans-serif;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2.5vh;
+}
+
+.title {
+	font-size: 5rem;
+	font-weight: bolder !important;
+}
+
+.item-form {
+	display: flex;
+	margin-bottom: 2.5rem;
+}
+
+.item-form__input {
+	padding: 0.75rem 0.75rem;
+	outline: none;
+	font-weight: lighter !important;
+	width: 30vw;
+}
+.item-form__submit {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 0.5rem 0.75rem;
+}
+
+.item-list {
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: column;
+	align-items: space-around;
+	width: 30vw;
+}
+
+.item-list__item {
+	display: flex;
+	margin-bottom: 0.5rem;
+}
+
+.-w-item-list__edit {
+	cursor: pointer;
+	margin-left: auto;
+}
+
+.item-list__status {
+	cursor: pointer;
+	margin-right: 0.4rem;
+}
+.item-list__status.fa-square {
+	color: grey;
+}
+.item-list__status.fa-check-square {
+	color: rgb(83, 219, 83);
+}
+
+.item-list__text {
+	margin-right: 0.5rem;
+}
+.item-list__text.checked {
+	text-decoration: line-through;
+}
+.item-list__edit {
+	margin-right: 0.25rem;
+	cursor: pointer;
+}
+.item-list__delete {
+	color: red;
+	margin-right: 0.5rem;
+	cursor: pointer;
+}
+
+.no-items-text {
+	color: grey;
+}
